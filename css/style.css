@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: #171040;
+    color: #ededed;
+
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+/* NAVBAR */
+.logo{
+    font-size: 25px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.navbar a{
+    font-size: 14px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 30px;
+    transition: .3s;
+}
+.navbar a:hover, 
+.navbar a.active{
+    color: #829aed;
+    font-size: 16px;
+}
+/* END NAVBAR */
+
+/* SECTION */
+#home{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    background-image: linear-gradient(to bottom, rgba(255,255,255,0), rgba(23, 16, 64, 1)), url(/img/PATUNG-SUDIRMAN.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+.home-content{
+    max-width: 600px;
+
+}
+.home-content h1{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1,2;
+}
+.home-content h3{
+    font-size: 24px;
+    font-weight: 700;
+    color: #829aed;
+}
+.home-content p{
+    font-size: 14px;
+    margin: 10px 0 20px;
+}
+.home-content .btn-box{
+    display: flex;
+    width: 345px;
+    height: 50px;
+}
+
+
+#schoolProfile{
+    padding: 80px 0;
+    text-align: center;
+    margin: 0px;
+    background-color: #171040;
+}
+.sp-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+.sp-item{
+    color: #171040;
+    width: 500px;
+    height: auto;
+    padding: 20px;
+    background-color: #829aed;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(130, 130, 130, 0.7);
+    transition: transform 0.3s ease;
+    text-align: center;
+    justify-content: center; 
+}
+.sp-item:hover{
+    transform: translateY(-5px);
+}
+.sp-item p{
+    color: #ededed;
+    text-align: justify;
+}
+
+/* END SECTION */
+
+
+/* SECTION 3 */
+#fasilitas{
+    height: 100vh;
+    padding: 80px 0;
+    text-align: center;
+    margin: 0px;
+    background-image: linear-gradient(to bottom, rgba(255,255,255,0), rgba(130, 154, 237, 1));
+    background-color: #171040;
+}
+.fasilitas h1{
+    color: #ededed;
+}
+.fasilitas p{
+    position: relative;
+    font-size: 16px;
+    margin: 20px 0 40px;
+    text-align: justify;
+}
+
+.fsl-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+.fsl-item{
+    color: #829aed;
+    width: 250px;
+    height: 250px;
+    padding: 20px;
+    background-image: linear-gradient(to right, #ededed, #829aed);
+    background-color: #ededed;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    display: flex;
+    transition: transform 0.3s ease;
+    text-align: center;
+    align-items: center;
+    justify-content: center; 
+}
+.fsl-item h1{
+    color: #171040;
+    text-align: center;
+    /* line-height: 250px; */
+    margin: 0;
+}
+.fsl-item:hover{
+    transform: translateY(-5px);
+}
+/* END SECTION 3 */
+
+
+/* SECTION 4 */
+#message{
+    height: 110vh;
+    padding: 50px 0;
+    text-align: center;
+    margin: 0px;
+    background-color: #829aed;
+}
+.msg-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+.msg-item{
+    background-color: #ededed;
+    width: 500px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(130, 130, 130, 0.7);
+    transition: transform 0.3s ease; 
+}
+.msg-item .result{
+    background-color: #ededed;
+    color: #171040;
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(130, 130, 130, 0.7);
+    transition: transform 0.3s ease;
+    padding: 20px;
+    text-align: left;
+    word-wrap: break-word;
+    overflow-wrap: break-word; 
+}
+
+#contactForm {
+    padding: 20px;
+    border-radius: 8px;
+    margin: 0px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    color: #171040;
+    display: flex;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.form-group input[type="text"],
+.form-group input[type="date"],
+
+.form-group textarea {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.form-group .msg{
+    height: 100px;
+}
+.radio-group {
+    display: flex;
+}
+
+.radio-group input[type="radio"] {
+    margin-right: 20px;
+}
+
+.radio-group label {
+    margin-right: 100px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* END SECTION 4 */
+
+
+/* FOOTER */
+footer{
+    color: #ededed;
+    padding: 20px;
+    text-align: center;
+    background-color: #171040;
+}
+.footer h3{
+    color: #ededed;
+}
+.copyright{
+    color: #ededed;;
+    margin-top: 20px;
+    font-size: 10px;
+}
+/* END FOOTER */
+
+
+/* BUTTON */
+.btn-box a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: #829aed;
+    border: 2px solid #829aed;
+    border-radius: 8px;
+    font-size: 18px;
+    color:black;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+}
+.btn-box a:nth-child(1){
+    background: transparent;
+    color: #829aed;
+}
+.btn-box a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background:#829aed;
+    z-index: -1;
+    transition: .5s;
+}
+.btn-box a:hover::before{
+    width: 100%;
+    
+}
+.btn-box a:nth-child(1):hover{
+    color: #171040;
+}
+
+
+
+html{
+    scroll-behavior: smooth;
+    animation-delay: 1ms;
+}

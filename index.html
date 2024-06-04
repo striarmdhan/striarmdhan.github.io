@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/css/style.css">
+    <title>personal website</title>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <a href="#" class="logo">Personal Website</a>
+
+        <nav class="navbar">
+            <a href="#" class="">Home</a>
+            <a href="#schoolProfile" class="">Our Profile</a>
+            <a href="#fasilitas" class="">Facilitation</a>
+            <a href="#message" class="">Message Us</a>
+        </nav>
+    </header>
+    <!-- END HEADER -->
+
+    <!-- SECTION -->
+    <section id="home">
+        <div class="home-content">
+            <h1 id="salam">Hi, Human</h1>
+            <h3>Welcome to Website</h3>
+            <p class="about">This is website of Universitas Pembangunan NasionaL Jawa Timur.</p>
+            <div class="btn-box">
+                <a href="#schoolProfile">Let's Go</a>
+            </div>
+        </div>
+    </section>
+    <!-- END SECTION -->
+
+    <!-- SECTION 2 -->
+    <section id="schoolProfile">
+        <h1>Profile Universitas</h1>
+        <div class="sp-container">
+            <div class="sp-item">
+                <h1>Tentang</h1>
+                <p>Pada periode 1959 – 1965, lembaga ini dikenal sebagai Akademi Administrasi Perusahaan Veteran Cabang Surabaya. Tahun 1968, namanya berubah menjadi Perguruan Tinggi Pembangunan Nasional (PTPN) Veteran Cabang Jawa Timur. Dari tahun 1976 hingga 1994, statusnya menjadi Perguruan Tinggi Kedinasan di bawah Departemen Pertahanan Keamanan RI. Pada tahun 1977, berganti nama menjadi Universitas Pembangunan Nasional Veteran Cabang Jawa Timur. Tahun 1995, berubah menjadi Perguruan Tinggi Swasta dengan nama UPN Veteran Jawa Timur, di bawah Yayasan Kejuangan Panglima Besar Sudirman dan Departemen Pertahanan dan Keamanan RI. Pada tahun 2007, pembinaannya beralih ke Yayasan Kesejahteraan Pendidikan dan Perumahan, tetapi tetap di bawah Kementerian Pertahanan RI. Seiring perkembangan, UPN Veteran Jawa Timur diproyeksikan menjadi Perguruan Tinggi Negeri (PTN) oleh Kementerian Pertahanan. Pada 6 Oktober 2014, Presiden RI Susilo Bambang Yudhoyono meresmikan UPN “Veteran” Jawa Timur sebagai PTN dengan menandatangani prasasti.</p>
+            </div>
+            <div class="sp-item">
+                <h1>Visi Misi</h1>
+                <p>Visi :
+                    “MENJADI UNIVERSITAS UNGGUL BERKARAKTER BELA NEGARA” <br>
+                    Misi : <br>
+                    - Menyelenggarakan dan mengembangkan pendidikan berkarakter bela negara. <br>
+                    - Meningkatkan budaya riset dalam pengembangan bidang IPTEK yang berdayaguna untuk kesejahteraan masyarakat. <br>
+                    - Menyelenggarakan pengabdian kepada masyarakat  berbasis riset dan kearifan lokal. <br>
+                    - Menyelenggarakan tata kelola yang baik dan bersih dalam rangka mencapai akuntabilitas pengelolaan anggaran. <br>
+                    - Mengembangkankualitas sumber daya manusia unggul dalam sikap dan tata nilai, unjuk kerja, penguasaan pengetahuan, dan manajerial. <br>
+                    - Meningkatkan sistem pengelolaan sarana dan prasarana terpadu. <br>
+                    - Meningkatkan kerjasama institusional dengan stakeholders baik dalam dan luar negeri.</p>
+            </div>
+        </div>
+        
+    </section>
+    <!-- END SECTION 2-->
+
+    <!-- SECTION 3 -->
+    <section id="fasilitas" class="fasilitas">
+        <h1>Our Facilitation</h1>
+        <div class="fsl-container">
+            <div class="fsl-item">
+                <h1>Laboratorium</h1>
+            </div>
+            <div class="fsl-item">
+                <h1>Dosen Professional</h1>
+            </div>
+            <div class="fsl-item">
+                <h1>Ruang kelas</h1>
+            </div>
+            <div class="fsl-item">
+                <h1>Gedung Olahraga</h1>
+            </div>
+        </div>
+    </section>
+    <!-- END SECTION 3 -->
+
+    <!-- SECTION 4 -->
+    <section id="message">
+        <h1>Message Us</h1>
+        <div class="msg-container">
+            <div class="msg-item">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Nama :</label>
+                        <input type="text" id="nama" placeholder="Nama">
+                    </div>
+                    <div class="form-group">
+                        <label for="birthday">Tanggal Lahir :</label>
+                        <input type="date" id="birthday">
+                    </div>
+                    <div class="form-group">
+                        <label>Jenis Kelamin :</label>
+                        <div class="radio-group">
+                            <input type="radio" name="jenisKelamin" id="pria" value="Pria">
+                            <label for="Pria">Pria</label>
+                            <input type="radio" name="jenisKelamin" id="wanita" value="Wanita">
+                            <label for="Wanita">Wanita</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Pesan :</label>
+                        <textarea id="msg" name="msg" class="msg"></textarea>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            <div class="msg-item">
+                <div id="result" class="result"></div>
+            </div>  
+        </div>
+    </section>
+    <!-- END SECTION 4 -->
+
+    <!-- FOOTER -->
+    <footer id="contact-me" class="footer">
+        <h3>Thank you</h3>
+        <div class="copyright">
+            <p>Copyright &copy; 2024 website blog created by KELOMPOK 2</p>
+        </div>
+    </footer>
+    <!-- END FOOTER -->
+    <script src="/js/script.js"></script>
+</body>
+</html>
